@@ -4,12 +4,15 @@ import Heading from './Heading'
 import Cards from './Cards'
 import './App.css'
 import Sayhello from './Sayhello'
+import Greetings from './Greetings'
 function App() {
     let name='hello';
     let offer='50% off';
     let arr = [1, 2, 3];
     
     let person={ firstName:'John', lastName:'Doe' };
+    let person2={ firstName:'miraya', lastName:'yeldrum' };
+   let name1='sarhan';
   return (
     
     <div>
@@ -24,7 +27,8 @@ function App() {
       <h1 className='h1style'>{name} {offer}</h1>
        
        <Sayhello props={person} />
-
+        <Sayhello props={person2} />
+        <Greetings name1={name1} />
        </div>
   )
 }
